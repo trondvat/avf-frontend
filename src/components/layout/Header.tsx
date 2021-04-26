@@ -7,7 +7,7 @@ const Header = (): JSX.Element => {
       <nav className="flex items-center justify-between flex-wrap bg-avf-black p-6 px-28 h-24">
         <img src={logo} className=" max-h-full max-w-full" alt="Logo" />
       </nav>
-      <hr className="mx-10 border-avf-red border-2 rounded-sm" />
+      <hr className=" mx-28 border-avf-red border-2 rounded-sm" />
     </div>
   );
 };
