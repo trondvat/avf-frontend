@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Container = ({ children }: Props): JSX.Element => {
-  return <div className="container mx-auto mb-auto mt-6">{children}</div>;
+  return <div className="container mx-auto mb-auto">{children}</div>;
 };
 
 Container.defaultProps = {
