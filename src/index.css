@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html, body {
   margin: 0;
   height: 100%;
@@ -18,4 +17,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  position:fixed;
+}
+
+html::-webkit-scrollbar-track {
+opacity: 0;
+}
+
+html::-webkit-scrollbar-thumb {
+@apply bg-avf-white;
+opacity: 0.70;
+border-radius: 25px;
 }
