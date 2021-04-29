@@ -1,0 +1,39 @@
+.header-link {
+    @apply max-w-xs font-title text-2xl hover:opacity-70;
+  }
+  
+  .nav-bar {
+    @apply flex items-center justify-between w-full h-full m-auto px-20 w-full lg:max-w-3xl md:max-w-lg;
+  }
+  
+  .nav-bar .nav-arrow {
+    display: none;
+    transition: transform 0.2s linear;
+  }
+
+  @media only screen and (max-width: 640px) {
+    .nav-bar {
+      @apply fixed flex-col bg-avf-black bg-opacity-0 px-0 justify-start h-screen w-10 right-0 top-0;
+      transition: width 200ms ease;
+    }
+    .nav-bar .nav-arrow{
+      @apply mt-8 block;
+    }
+    .nav-bar a {
+      margin-top: 2rem;
+    }
+    .header-link {
+      display: none;
+    }
+    .nav-bar:focus .header-link{
+      display: block;
+    }
+    .nav-bar:focus .nav-arrow{
+      transform: rotate(180deg);
+    }
+    .nav-bar:focus{
+      width: 10rem;
+      outline: 0px;
+      @apply bg-opacity-70;
+    }
+  }
